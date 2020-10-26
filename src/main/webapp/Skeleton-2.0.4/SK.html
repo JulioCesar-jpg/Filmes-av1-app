@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Skeleton</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="icon" type="image/png" href="images/sk.png">
+    <style>
+        .column, .columns{
+            background: #ddd;
+            border-radius: 0.5rem;
+            border:rgb(97, 97, 97) solid 0.1rem;
+        }
+        #user{
+            width: 4rem;
+            height: 4rem;
+        }
+        #top{
+            background: transparent;
+            border: none;
+        }
+        #logo{
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+        }
+        @media(max-width: 550px){
+            #menu ul{
+                text-align: center;
+                background: transparent;
+                border:none;
+            }
+            #menu ul li{
+                display: block;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                border: 0.1rem solid transparent;
+                cursor: pointer;
+            }
+            #menu ul li:hover{
+                display: block;
+                color:#ff0000;
+                border: 0.1rem solid rgb(255, 0, 0);
+                border-radius: 0.5rem;
+                cursor: pointer;
+            }
+            #user{
+                display: none;;
+            }
+            #links{
+                position: relative;
+                left: 1.5rem;
+                transform: translate(-100%);
+            }
+        }
+        @media(min-width: 550px){
+            #menu ul{
+                transform: translate(50%,50%);
+                text-align: center;
+                background: transparent;
+                border:none;
+            }
+            #menu ul li{
+                display: inline;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                cursor: pointer;
+            }
+            #menu ul li:hover{
+                display: inline;
+                color:#ff0000;
+                border: 0.1rem solid rgb(255, 0, 0);
+                border-radius: 0.5rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                cursor: pointer;
+            }
+        }
+        #header{
+            float:left;
+            background: transparent;
+            border:none;
+        }
+        #IH{
+            position: relative;
+            width: 29rem;
+            height: 29rem;
+            left: 50%;
+            transform: translate(-50%);
+        }
+        #banner{
+            position:relative;
+            left: 50%;
+            transform: translate(-50%);
+            width: 10rem;
+            height: 10rem;
+        }
+        #PB{
+            height: 5rem;
+            text-align: center;
+        }
+        #DB{
+            
+            background: transparent;
+            border:none;
+        }
+    </style>
+</head>
+<body>
+    <div class="one-third column" id="top">
+        <img src="images/logo.png" id="logo">
+    </div>
+    
+    <br>
+    
+    <div id="links" class="u-pull-right">
+        <a href="">Link 1</a>
+        <a href="">Link 2</a>
+        <a href="">Link 3</a>
+        <a href="">Link 4</a>
+        <img src="images/user.png" id="user">
+    </div>
+
+    <div class="eleven columns" id="menu">
+        <ul class="one-half column">
+            <li>Nav Link</li>
+            <li>Nav Link</li>
+            <li>Nav Link</li>
+            <li>Nav Link</li>
+            <li>Nav Link</li>
+            <li>Nav Link</li>
+            <li>Nav Link</li>
+        </ul>
+    </div>
+
+    <div class="u-cf"><br></div>
+    
+    <div class="three columns u-pull-left">
+        <div><b>Header</b> <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates dolorem consequuntur architecto autem quasi, pariatur libero error, ratione ducimus tempora deleniti, ipsa explicabo adipisci reiciendis?</div>
+        <div><b>Header</b> <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates dolorem consequuntur architecto autem quasi, pariatur libero error, ratione ducimus tempora deleniti, ipsa explicabo adipisci reiciendis?</div>
+        <div><b>Header</b> <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates dolorem consequuntur architecto autem quasi, pariatur libero error, ratione ducimus tempora deleniti, ipsa explicabo adipisci reiciendis?</div>
+    </div>
+
+    <div class="eight columns u-pull-left" id="PB"><b>PROMOTIONAL BANNER</b></div>
+
+    <div class="eight columns u-pull-left" id="header">
+        <div class="one-half column">Product Header <br> <img src="images/user.png" id="IH"></div>
+        <div class="one-half column">Product Header <br> <img src="images/user.png" id="IH"></div>
+
+        <div class="u-cf"></div>
+
+        <br>
+    </div>
+
+    <div class="eight columns u-pull-left" id="DB">
+        <div class="one-third column"><img src="images/user.png" id="banner"></div>
+        <div class="one-third column"><img src="images/user.png" id="banner"></div>
+        <div class="one-third column"><img src="images/user.png" id="banner"></div>
+    </div>
+</body>
+</html>
