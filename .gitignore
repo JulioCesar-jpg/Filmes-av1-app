@@ -1,2 +1,5 @@
 /target/
 /.metadata/
+/src/main/java/com/mycompany/filmes/app/servlets/
+/src/main/java/com/mycompany/filmes/app/models/
+/src/main/webapp/

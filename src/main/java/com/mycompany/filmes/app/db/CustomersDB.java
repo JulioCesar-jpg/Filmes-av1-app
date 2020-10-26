@@ -10,7 +10,7 @@ import com.mycompany.filmes.app.models.Customers;
 public class CustomersDB {
 
 	static public List<Customers> customersList;
-// op
+
 	public CustomersDB(ServletContext context) {
 		if (context.getAttribute("customersList") != null) {
 			this.customersList = (List) context.getAttribute("customersList");
